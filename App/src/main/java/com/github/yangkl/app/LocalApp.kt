@@ -10,7 +10,7 @@ class LocalApp : Application() {
         super.onCreate()
 
         // 初始化HttpLogger
-        HttpLogger.init(this).debug(true).url("").callback(httpLoggerCallback)
+        HttpLogger.initialize(this).debug(true).url("").callback(httpLoggerCallback)
 
     }
 
