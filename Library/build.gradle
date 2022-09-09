@@ -1,9 +1,12 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 apply plugin: 'kotlin-kapt'
+
+group = 'com.github.YangKangLi'
 
 android {
     compileSdk 32
