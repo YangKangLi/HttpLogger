@@ -17,13 +17,11 @@ class HttpLogger {
         const val TAG = "HttpLogger"
 
         // 获得单例对象
-        @JvmStatic
-        fun init(context: Application): HttpLogger {
+        @JvmStatic fun initialize(context: Application): HttpLogger {
             return SingletonHolder.holder.init(context)
         }
 
-        @JvmStatic
-        fun d(content: String) {
+        @JvmStatic fun d(content: String) {
             if (Logger.getInstance().check()) {
                 if (Logger.getInstance().debug) {
                     Log.d(TAG, content)
